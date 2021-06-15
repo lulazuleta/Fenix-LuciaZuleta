@@ -1,11 +1,14 @@
 
 import './App.css';
+import {NavBar} from './components/navBar/navBar'
+import './components/navBar/navBar.css'
 
 function App() {
   return (
     <div className="App">
+        <NavBar />
+
       <header className="App-header">
-        
         <p>
          Proyecto Casa Fenix
         </p>

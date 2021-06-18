@@ -1,12 +1,16 @@
-
 import './App.css';
 import {NavBar} from './components/navBar/navBar'
-import './components/navBar/navBar.css'
+import {ItemListContainer} from './components/ItemListContainer/ItemListContainer'
+
+
+
 
 function App() {
   return (
     <div className="App">
-        <NavBar />
+        <NavBar/>
+        <ItemListContainer/>
+      
 
       <header className="App-header">
         <p>

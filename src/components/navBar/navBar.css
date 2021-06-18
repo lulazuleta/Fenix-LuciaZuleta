@@ -7,13 +7,16 @@
   
   /* Style the links inside the navigation bar */
   .barra a {
-    display: inline-block;
+    display: block;
     float: left;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+  }
+  .barra p{
+    color: #ddd;
   }
   
   /* Change the color of links on hover */

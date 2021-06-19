@@ -1,12 +1,13 @@
 import '../CartWidget/CartWidget.css'
+import carrito from '../../img/carrito.png'
 
 export const CartWidget = ()=> {
     return (
 
     <div className="imagen">
-        
-        <img src='../../src/img/carrito.png' alt="carrito"/>
-    
+        <a href="https://instagram.com">
+        <img src={carrito}/>
+        </a>
         </div>
 )
 }

@@ -1,12 +1,14 @@
 import '../CartWidget/CartWidget.css'
-import carrito from '../../img/carrito.png'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 
 export const CartWidget = ()=> {
     return (
 
-    <div className="imagen">
-        <a href="https://instagram.com">
-        <img src={carrito}/>
+    <div className="imagen" style= {{fontSize: '2x' , color:"black" }} >
+        <a href="">
+        <FontAwesomeIcon icon={faShoppingCart}/>
         </a>
         </div>
 )

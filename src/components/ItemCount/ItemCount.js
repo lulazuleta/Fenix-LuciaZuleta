@@ -1,15 +1,33 @@
-let cantidad =0;
+//import {producto} from '../../img/XLVI19.PNG'
+//import { useState } from "react"
+import { useState } from 'react'
+import {ItemListContainer} from '../ItemListContainer/ItemListContainer.js'
+
+
+
 export const ItemCount = ()=> {
+    
+    const [product, setProduct] = useState('')
+
+    const handleClick =()=> {
+        return (
+        setProduct('el producto se agrego al carrito')
+        )
+
+    }
+
    
     return (
         <div>
-            <input type="number" min="1" className="contador"></input> <br/>
-            <button className="Agregar">Agregar al carrito </button>
+        <ItemListContainer onAdd={handleClick}/>
+<section>
+        <p>{product}</p>
+        </section>
         </div>
-
-
     )
 
 
 
 }
+
+//<a> <img src={producto} alt="producto1"/> </a>

@@ -1,6 +1,6 @@
 import './App.css';
 import {NavBar} from './components/navBar/navBar'
-import {ItemListContainer} from './components/ItemListContainer/ItemListContainer'
+
 import {ItemCount}from './components/ItemCount/ItemCount'
 
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
         <NavBar/>
-        <ItemListContainer/>
+        
         <ItemCount/>
       
 

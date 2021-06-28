@@ -1,6 +1,5 @@
 import './App.css';
 import {NavBar} from './components/navBar/navBar'
-
 import {ItemCount}from './components/ItemCount/ItemCount'
 
 
@@ -11,7 +10,7 @@ function App() {
     <div className="App">
         <NavBar/>
         
-        <ItemCount/>
+        <ItemCount />
       
 
       <header className="App-header">

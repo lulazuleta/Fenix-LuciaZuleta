@@ -1,22 +1,26 @@
+import {ItemCount} from "../../components/ItemCount/ItemCount.js";
 
-
-export const ItemListContainer = ({onAdd})=> {
+export const ItemListContainer = ()=> {
    
+    let handleClick = ()=> {
+
+   
+         
+         setProduct('el producto se agrego correctamente')
+ }
     return (
 
     <div className="ItemListContainer">
         
         <h1>Productos</h1> <br/>
 
-
-        <div className="catalogo" style={{backgroundColor: "#c2c2c2", height:"200px", width:"200px", marginLeft:"auto", marginRight:"auto"}}>
-       
-            <p>Ejemplo de producto</p>
-
-            <input type="number" min="1"  defaultValue="1"></input> <br/>
-            <button onClick={onAdd}>Agregar al carrito </button> 
-          
+        <div>
+        <ItemCount initial={1} stock={30} onAdd={handleClick}/>
+<section>
+        <p>{product}</p>
+        </section>
         </div>
+        
     </div>
 )
 }

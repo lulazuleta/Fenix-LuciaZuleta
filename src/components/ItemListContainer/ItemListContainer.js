@@ -1,26 +1,57 @@
-import {ItemCount} from "../../components/ItemCount/ItemCount.js";
+import { useEffect, useState } from "react";
+
+import {ItemList} from "../ItemList/ItemList"
 
 export const ItemListContainer = ()=> {
-   
-    let handleClick = ()=> {
+
+    const [catalogo, setCatalogo] = useState([])
+
+    const listadoProductos = [
+        {
+            "ID": "PINCFC",
+            "DESCRIPCION": "Pinche Feliz cumple",
+            "Precio": "32"
+        },
+        {
+            "ID": "PINCDC",
+            "DESCRIPCION": "PINCHE FELIZ CUMPLE DOS COLORES",
+            "Precio": "33"
+        },
+        {
+            "ID": "BENGDC",
+            "DESCRIPCION": "bengala gibre dos colores",
+            "Precio": "120"
+        }]
+
+        useEffect(()=>{
+
+        const nuevaPromesa = new Promise((res, rej)=>{
+
+            setTimeout (()=>{
+                res(listadoProductos)
+
+            },2000)
+          
+        })
+
+        nuevaPromesa.then((res)=>{
+            console.log(res)
+            setCatalogo(res)
+
+        })
+    },[])
+
 
    
-         
-         setProduct('el producto se agrego correctamente')
- }
     return (
+<>
 
-    <div className="ItemListContainer">
-        
-        <h1>Productos</h1> <br/>
+<h1>Productos</h1> <br/>
+<ItemList items={catalogo}></ItemList>
 
-        <div>
-        <ItemCount initial={1} stock={30} onAdd={handleClick}/>
-<section>
-        <p>{product}</p>
-        </section>
-        </div>
-        
-    </div>
+</>
+    
 )
 }
+
+

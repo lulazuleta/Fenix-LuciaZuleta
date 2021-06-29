@@ -8,9 +8,9 @@ import { isConditionalExpression } from 'typescript'
 
 
 
-export const ItemCount = ({onAdd})=> {
-    let [stocks, setStocks] = useState(30)
-    let [cantidad, setCantidad] = useState(1)
+export const ItemCount = ({initial, stock, onAdd})=> {
+    let [stocks, setStocks] = useState(stock)
+    let [cantidad, setCantidad] = useState(initial)
 
     console.log(stocks)
     console.log(cantidad);
@@ -36,7 +36,7 @@ export const ItemCount = ({onAdd})=> {
     return (
 <div className="catalogo" style={{backgroundColor: "#c2c2c2", height:"200px", width:"200px", marginLeft:"auto", marginRight:"auto"}}>
        
-       <p>Ejemplo de producto</p>
+       
 
        <div className="ItemCount">           
        <button onClick={disminuir}><span>-</span></button>

@@ -43,15 +43,23 @@ export const ItemDetailContainer = ()=>{
     },[])
     return (
 <>
+<section>
+
 <div className="detailTitulo">
+<br/>
+<br/>
+<br/>
+
+
 <h1>Detalle de Producto!!! :) </h1>
 </div>
-
+</section>
  <br/>
 <div className="detailProducto">
 
 <ItemDetail item={producto}></ItemDetail>
 </div>
+
 </>
     
 )

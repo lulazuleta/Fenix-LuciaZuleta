@@ -1,8 +1,5 @@
 import { useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faPlusSquare} from '@fortawesome/free-solid-svg-icons'
-import {faMinusSquare} from '@fortawesome/free-solid-svg-icons'
-import { isConditionalExpression } from 'typescript'
+
 
 export const ItemCount = ({initial, stock, onAdd})=> {
 
@@ -32,7 +29,7 @@ export const ItemCount = ({initial, stock, onAdd})=> {
     }
    
     return (
-<div className="catalogo" style={{backgroundColor: "#c2c2c2", height:"200px", width:"200px", marginLeft:"auto", marginRight:"auto"}}>
+<div className="catalogo">
        
        
 

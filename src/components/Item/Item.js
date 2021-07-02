@@ -1,4 +1,5 @@
 import {ItemCount} from "../../components/ItemCount/ItemCount.js"
+import '../Item/Item.css'
 
 export const Item = ({item}) => {
 
@@ -19,16 +20,16 @@ let handleClick = ()=> {
   
 
 
-    <div className="ItemListContainer">
+    <div className="Items">
         
-    <p>Id: <span>{item.ID}</span></p>
-    <p>nombre: <span>{item.DESCRIPCION}</span></p>
-    <p>Precio: <span>{item.Precio}</span></p>
+    <p className="detalle">Id: <span>{item.ID}</span></p>
+    <p className="detalle">nombre: <span>{item.DESCRIPCION}</span></p>
+    <p className="detalle">Precio: <span>{item.Precio}</span></p>
 
         <div>
         <ItemCount initial={1} stock={30} onAdd={handleClick}/>
 <section>
-{  /*      <p>{mensaje}</p>*/}     
+
 
 
    </section>

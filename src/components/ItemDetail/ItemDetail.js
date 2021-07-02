@@ -3,7 +3,7 @@
 export const ItemDetail = ({item}) => {
 
 console.log(item)
-//let [mensaje, setMensaje] = useState('')
+
    
 
 
@@ -17,6 +17,9 @@ console.log(item)
 
         <div>        
 <section>
+
+<br/><br/><br/>
+
    </section>
         </div>
         

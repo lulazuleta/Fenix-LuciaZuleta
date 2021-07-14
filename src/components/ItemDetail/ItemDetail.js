@@ -1,9 +1,15 @@
-
+import { useState } from 'react'
+import {ItemCount} from '../ItemCount/ItemCount'
 
 export const ItemDetail = ({item}) => {
 
 console.log(item)
 
+const [terminar, setTerminar] = useState(null);
+
+function onAdd() {
+    setTerminar(".");
+  }
    
 
 
@@ -22,8 +28,21 @@ console.log(item)
 
    </section>
         </div>
+
+
+        {!terminar ? (
+            <ItemCount stock={5} initial={1} onAdd={onAdd} />
+          ) : (     <Link to={`/cart/`}>
+          <div>
+            <button>
+              Terminar compra
+            </button>
+          </div>
+        </Link>
+      )}
         
     </div> 
+    
     </>
  )
 
